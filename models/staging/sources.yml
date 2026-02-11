@@ -14,7 +14,7 @@ sources:
             count: 2600
             period: day
           error_after:
-            count: 2700
+            count: 2600
             period: day
  
       - name: order_items
