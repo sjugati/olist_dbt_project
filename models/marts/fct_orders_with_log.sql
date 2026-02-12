@@ -1,9 +1,3 @@
-{{ config(
-    materialized='table',
-    pre_hook="INSERT INTO {{ target.schema }}.model_run_log (model_name, run_timestamp) VALUES ('{{ this.name }}', CURRENT_TIMESTAMP())",
-    post_hook="GRANT SELECT ON {{ this }} TO ROLE ACCOUNTADMIN"
-) }}
-
 -- Same SQL as fct_orders
 WITH orders AS (
     SELECT *
