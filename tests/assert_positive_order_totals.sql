@@ -10,4 +10,4 @@ SELECT
     order_id,
     order_total
 FROM order_totals
-WHERE order_total <= 0
+WHERE order_total < 0
